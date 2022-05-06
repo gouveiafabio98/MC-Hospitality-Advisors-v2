@@ -1,0 +1,86 @@
+main h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 3.75em;
+    margin: 1rem 0 4rem 0;
+}
+
+main h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+
+main {
+    overflow: hidden;
+}
+
+main span {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+main>div {
+    min-height: calc(100vh + 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div:nth-child(2n) {
+    background: #6D8474;
+    color: var(--white);
+}
+
+main .content img {
+    max-height: calc(var(--vh, 1vh) * 65);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+main .content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .content:first-child {
+    padding-top: calc(var(--vh, 1vh) * 20);
+}
+
+main .content:last-child {
+    padding-bottom: calc(var(--vh, 1vh) * 15);
+}
+
+main .content div:not(:first-child) {
+    margin-left: 2em;
+}
+
+main .content .left-side {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .content .right-side {
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .content .center-side {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .content .more {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: right;
+    padding-top: 7rem;
+}

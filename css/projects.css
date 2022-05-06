@@ -1,0 +1,52 @@
+main .projects {
+    flex-direction: column;
+}
+
+main .projects .left .left-side,
+main .projects .right .right-side {
+    width: 25vw;
+}
+
+main .projects .left .right-side,
+main .projects .right .left-side {
+    width: 45vw;
+}
+
+main .projects .content img {
+    margin: 0;
+    max-height: 100%;
+    width: 100%;
+}
+
+main .projects .subtitle {
+    max-width: 25vw;
+    position: relative;
+}
+
+main .projects .right .subtitle {
+    max-width: 25vw;
+    left: 40vw;
+}
+
+main .projects {
+    padding-top: calc(var(--vh, 1vh) * 20);
+}
+
+main .projects .project-img {
+    max-height: calc(var(--vh, 1vh) * 65);
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+main .projects .location {
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+main .projects .right .location {
+    text-align: right;
+}
+
+main .projects h1 {
+    margin: 1rem 0 0.2rem 0;
+}
