@@ -4,13 +4,13 @@ var scrollAlert = setTimeout(function() {
     scrollAlertEl.classList.add("active");
 }, 2500);
 
-scrollAlert.status = true;
+scrollAlertEl.status = true;
 
 scroller.on('scroll', (instance) => {
-    if (scrollAlert.status) {
-        scrollAlert = false;
+    if (scrollAlertEl.status && instance.scroll.y != 0) {
+        scrollAlertEl.status = false;
         clearTimeout(scrollAlert);
-    } else {
-        scrollAlertEl.classList.remove("active");
+        if (scrollAlertEl.classList.contains("active"))
+            scrollAlertEl.classList.remove("active");
     }
 });

@@ -9,7 +9,7 @@ var nav = document.getElementsByTagName("nav")[0];
 bttMenu.addEventListener("click", function() {
     iconMenu.classList.toggle("active");
     menu.classList.toggle("active");
-
+    menu.status = !menu.status;
     scrollerMenu();
 });
 
@@ -32,9 +32,10 @@ function menuItemLeave() {
 }
 
 function onScrollMenu(scrollY) {
-    if (scrollY > window.innerHeight - 100) {
-        nav.classList.add("scroll");
-    } else {
-        nav.classList.remove("scroll");
-    }
+    if (!menu.status)
+        if (scrollY > window.innerHeight - 100) {
+            nav.classList.add("scroll");
+        } else {
+            nav.classList.remove("scroll");
+        }
 }
