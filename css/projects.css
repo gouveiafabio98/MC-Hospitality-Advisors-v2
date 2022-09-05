@@ -39,14 +39,20 @@ main .projects .project-img {
 }
 
 main .projects .location {
-    margin-bottom: 2rem;
+    margin: 1rem 0 2rem 0;
     font-style: italic;
-}
-
-main .projects .right .location {
     text-align: right;
+    display: block;
 }
 
 main .projects h1 {
     margin: 1rem 0 0.2rem 0;
+}
+
+main .projects>div {
+    padding-bottom: calc(var(--vh, 1vh) * 20);
+}
+
+main .projects .content {
+    margin-top: 2.5em;
 }

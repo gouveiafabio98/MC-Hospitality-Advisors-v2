@@ -68,3 +68,9 @@
 #landing .btt-main {
     animation: fade-in 1.5s;
 }
+
+@media (max-width: 750px) {
+    #landing .btt-main {
+        display: none;
+    }
+}
